@@ -1,0 +1,43 @@
+.wish {
+    text-align: center;
+    padding: 20px;
+    margin-top: 80px; /* Adjust this value as needed */
+}
+
+
+.wish-heading {
+    color:#ff512f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.food-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food-item {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.food-item p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.food-item:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <a href="index.htm" class="home-link">
+                <img src="icon.png" alt="Swiggy Icon">
+                <h2>SWIGGY</h2>
+            </a>
+            <select>
+                <option>Select Location</option>
+                <option>New York</option>
+                <option>Los Angeles</option>
+                <option>Chicago</option>
+            </select>
+        </div>
+        <nav class="nav-links">
+            <a href="discount.htm" class="nav-item"><i class="fa-solid fa-percent"></i> Offers</a>
+            <a href="help.htm" class="nav-item"><i class="fa-brands fa-hire-a-helper"></i> Help</a>
+            <a href="signin.htm" class="nav-item"><i class="fa-solid fa-user"></i> Sign In</a>
+            <a href="cart.htm" class="nav-item cart"> <i class="fas fa-shopping-cart"></i> Cart</a>
+            <input type="text" placeholder="Search food..." class="search-box">
+        </nav>
+    </header>
+    <div class="cart-page container">
+        <h2 class="section-heading" >Your Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="burger.jpg" alt="Burger">
+                <div class="item-details">
+                    <h3>Burger</h3>
+                    <p>Price: $5</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="biryani.jpg" alt="Biryani">
+                <div class="item-details">
+                    <h3>Biryani</h3>
+                    <p>Price: $10</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="pizza.jpg" alt="Pizza">
+                <div class="item-details">
+                    <h3>Pizza</h3>
+                    <p>Price: $15</p>
+                    <p>Quantity: 1</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="total">
+            <h3>Total: $40</h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+
+    
+    <footer class="footer">
+        <p>© 2025 SAI KRISHNA. All Rights Reserved.</p>
+        <p class="developer">Developed by <span>SAI KRISHNA</span></p>
+    </footer>
+    
+</body>
+</html>

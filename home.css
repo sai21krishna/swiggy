@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.home-link img {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-link img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.header select {
+    padding: 0.6rem;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.header select:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #ffeb3b;
+}
+
+/* Search Box */
+.search-box {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.search-box:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.8);
+}
+
+/* Home Page Styling */
+.home-page, .home-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ff5722;
+}
+
+/* Food Items */
+.food-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.food-item {
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.food-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-item img:hover {
+    transform: scale(1.1);
+}
+
+.food-item p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Best Places to Eat */
+.city-places {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.city-card {
+    padding: 1rem;
+    background: #ff9800;
+    border-radius: 10px;
+    color: white;
+    width: 250px;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.city-card h3 {
+    margin: 0;
+}
+
+.city-card p {
+    font-size: 1rem;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #333;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    border-top: 3px solid #ff9800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .developer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.footer .developer span {
+    color: #ff9800;
+}
