@@ -1,0 +1,104 @@
+/* General Footer Styling */
+.footer {
+    background-color: hsl(0, 8%, 12%);
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    animation: fadeBounce 1s ease-in-out;
+}
+
+/* Container to align elements */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contact Info (Left-Aligned) */
+.contact {
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.contact a {
+    color: #00AEEF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    color: #FF9800;
+}
+
+/* Social Media Icons (Right-Aligned) */
+.social-icons {
+    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effects for icons */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:nth-child(1):hover { color: #1877F2; } /* Facebook */
+.social-icons a:nth-child(2):hover { color: #1DA1F2; } /* Twitter */
+.social-icons a:nth-child(3):hover { color: #E4405F; } /* Instagram */
+.social-icons a:nth-child(4):hover { color: #0077B5; } /* LinkedIn */
+
+/* Animations */
+
+/* Fade-in Bounce Effect */
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
